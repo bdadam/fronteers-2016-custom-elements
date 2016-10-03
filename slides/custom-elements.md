@@ -52,3 +52,24 @@
 ```
 
 [goo.gl/GEQqE9](https://goo.gl/GEQqE9)
+
+--
+
+### Tracking
+
+```html
+<x-tracking type="google-analytics"
+            tid="UA-XXXXX-Y"
+            send="pageview">
+</x-tracking>
+
+<x-tracking type="google-analytics"
+            send="event"
+            category="Video"
+            action="play"
+            label="Cat playing piano">
+</x-tracking>
+```
+
+--
+
