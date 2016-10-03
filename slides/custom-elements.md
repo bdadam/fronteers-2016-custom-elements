@@ -73,3 +73,56 @@
 
 --
 
+### Notification
+
+<x-notification type="success" message="Action completed successfully!" timeout="5000"></x-notification>
+
+```html
+<x-notification type="success"
+                message="Action completed successfully!"
+                timeout="5000">
+</x-notification>
+```
+
+--
+
+### Notification (code)
+
+```javascript
+class XNotification extends HTMLElement {
+    connectedCallback() {
+        const message = this.getAttribute('message');
+        const type = this.getAttribute('type');
+        const style = type === 'success'
+                ? 'background-color: #dff0d8; color: #3c763d; ...'
+                : 'background-color: #ccc; color: #444;';
+        
+        this.innerHTML = `<div style="${style}">${message}</div>`;
+    }
+}
+
+customElements.define('x-notification', XNotification);
+
+```
+
+--
+
+### Notification (code/2)
+```javascript
+class XNotification extends HTMLElement {
+    
+    show() {
+        this.removeAttribute('hidden');
+    }
+
+    hide() {
+        this.setAttribute('hidden', '');
+    }
+}
+
+customElements.define('x-notification', XNotification);
+
+document.querySelector('#success-notification').show();
+// or
+document.querySelector('#success-notification').hide();
+```
