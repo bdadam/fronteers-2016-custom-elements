@@ -4,10 +4,69 @@
 
 ###### Adam Beres-Deak
 
+---
+
+> Custom Elements provide a way to define standardized functionality which can be invoked declaratively with the corresponding HTML markup.
+
+---
+
+```html
+<custom-element some-attribute="value"></custom-element>
+```
+
+---
+
+### Properties of custom Elements
+
+- lifecycle
+- framework agnostic
+- 
+
+
 --
 
-# Next slide
+### Custom Element Lifecycle
 
+- created
+- attached to DOM
+- attribute changed
+- removed from DOM
+
+--
+
+```javascript
+class CustomElement extends HTMLElement {
+    constructor() {
+        super(); // mandatory call to super()
+    }
+
+    static get observedAttributes() {
+        return ["attr1", "attr2"];
+    }
+
+    connectedCallback() { }
+    disconnectedCallback() { }
+    attributeChangedCallback(name, oldValue, newValue) { }
+}
+
+customElements.define('custom-element', CustomElement);
+```
+
+--
+
+### Creating custom elements
+
+```javascript
+class CustomElement extends HTMLElement {
+    constructor() {
+        super(); // mandatory call to super()
+        console.log('constructor called');
+    }
+}
+customElements.define('custom-element', CustomElement);
+
+document.createElement('custom-element'); // "constructor called"
+```
 
 --
 
@@ -125,4 +184,29 @@ customElements.define('x-notification', XNotification);
 document.querySelector('#success-notification').show();
 // or
 document.querySelector('#success-notification').hide();
+```
+
+---
+
+### Custom Elements are reality
+
+* Native support in Chrome and Firefox (earlier version of the spec)
+* Most features can be polyfilled (even IE8, iOS 5.1, Android 2.2)
+* [github/WebReflection/document-register-element](https://github.com/WebReflection/document-register-element) (5kB min+gzip)
+
+---
+
+```html
+<this-presentation has-ended="true">
+    <available-at>             goo.gl/aCJfKJ            </available-at>
+
+    <presented-by>
+        <presenter-name>       Adam Beres-Deak          </presenter-name>
+        <presenter-website>    bdadam.com               </presenter-website>
+
+        <presenter-twitter>    @bdadamm                 </presenter-twitter>
+        <presenter-github>     github/bdadam            </presenter-github>
+        <presenter-email>      me@bdadam.com            </presenter-github>
+    </presented-by>
+</this-presentation>
 ```
