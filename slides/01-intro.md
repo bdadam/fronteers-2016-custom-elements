@@ -8,8 +8,6 @@
 
 > Custom Elements provide a way to define standardized functionality which can be invoked declaratively with the corresponding HTML markup.
 
----
-
 ```html
 <custom-element some-attribute="value"></custom-element>
 ```
@@ -18,10 +16,11 @@
 
 ### Properties of custom Elements
 
+- declarative usage (HTML)
 - natural way of componentization
 - useful lifecycle events
 - framework agnostic
-- declarative usage (HTML)
+- DOM API
 
 --
 

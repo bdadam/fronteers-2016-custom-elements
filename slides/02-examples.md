@@ -133,3 +133,25 @@ class HttpsRedirect extends HTMLElement {
 
 customElements.define('https-redirect', HttpsRedirect);
 ```
+
+--
+
+### Ajax
+
+```html
+<x-ajax id="ajax-request"
+        url="https://example.com/api/entity"
+        method="post"
+        params='{ "key": "value" }'
+        content-type="application/json"
+        data-type="json"
+        onsuccess="successHandler"
+        onerror="errorHandler">
+</x-ajax>
+<script>
+document.querySelector('#ajax-request')
+    .addEventListener('success', e => {
+        console.log(e.response)
+    });
+</script>
+```
