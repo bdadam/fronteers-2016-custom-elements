@@ -1,8 +1,16 @@
+<!-- .x-slide: data-background="assets/sport-fitness-workout-resolution.jpg" -->
+
 # Custom Elements
 
-#### Lightweight alternatives to frameworks
+### Lightweight alternatives to frameworks
+
+-----
 
 ###### Adam Beres-Deak
+
+---
+
+#### Providing a library to other developers without them having to write a single line of JavaScript code
 
 ---
 
