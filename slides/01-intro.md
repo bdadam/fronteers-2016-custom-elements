@@ -43,15 +43,15 @@
 
 ```javascript
 class CustomElement extends HTMLElement {
+    connectedCallback() { }
+    disconnectedCallback() { }
+    attributeChangedCallback(name, oldValue, newValue) { }
+
     constructor() { super(); /* mandatory call to super() */ }
 
     static get observedAttributes() {
         return ["attr1", "attr2"];
     }
-
-    connectedCallback() { }
-    disconnectedCallback() { }
-    attributeChangedCallback(name, oldValue, newValue) { }
 
     someCustomMethod() { }
 }
