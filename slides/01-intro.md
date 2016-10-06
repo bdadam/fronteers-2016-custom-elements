@@ -26,7 +26,6 @@
 
 - declarative usage (HTML)
 - natural way of componentization
-- useful lifecycle events
 - framework agnostic
 - DOM API
 
@@ -57,20 +56,4 @@ class CustomElement extends HTMLElement {
 }
 
 customElements.define('custom-element', CustomElement);
-```
-
---
-
-### Creating custom elements
-
-```javascript
-class CustomElement extends HTMLElement {
-    constructor() {
-        super(); // mandatory call to super()
-        console.log('constructor called');
-    }
-}
-customElements.define('custom-element', CustomElement);
-
-document.createElement('custom-element'); // "constructor called"
 ```
