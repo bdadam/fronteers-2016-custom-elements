@@ -16,10 +16,6 @@ Note: Hi everyone, my name is Adam. I am going to present you a very cool techni
       without them having to write a single line of JavaScript code.
       It is also a good way to structure your work, your codebase.
 
-      - organize components
-      - provide functionality
-      - using components from others without writing JS code
-
 ---
 
 #### Providing a library to other developers without them having to write a single line of JavaScript code
