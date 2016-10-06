@@ -1,12 +1,16 @@
 <!-- .x-slide: data-background="assets/sport-fitness-workout-resolution.jpg" -->
+<!-- .slide: data-background="assets/elephant-cub-tsavo-kenya-66898.jpeg" -->
+<!-- .slide: id="opening-slide" -->
 
 # Custom Elements
 
-### Lightweight alternatives to frameworks
+### Lightweight Alternatives to Frameworks
 
 -----
 
 ###### Adam Beres-Deak
+
+@bdadamm
 
 ---
 
