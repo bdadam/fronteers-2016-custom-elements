@@ -8,9 +8,17 @@
 
 -----
 
-###### Adam Beres-Deak
+###### Adam Beres-Deak (AutoScout24)
 
 @bdadamm
+
+Note: Hi everyone, my name is Adam. I am going to present you a very cool technique to provide complex functionality for consumers
+      without them having to write a single line of JavaScript code.
+      It is also a good way to structure your work, your codebase.
+
+      - organize components
+      - provide functionality
+      - using components from others without writing JS code
 
 ---
 
@@ -18,7 +26,7 @@
 
 ---
 
-> Custom Elements provide a way to define standardized functionality which can be invoked declaratively with the corresponding HTML markup.
+> Custom Elements provide a standardized way to define functionality which can be invoked declaratively with the corresponding HTML markup.
 
 ```html
 <custom-element some-attribute="value"></custom-element>

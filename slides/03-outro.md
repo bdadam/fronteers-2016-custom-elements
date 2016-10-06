@@ -1,3 +1,11 @@
+### Testing
+
+```javascript
+assert.equal(document.querySelectorAll('custom-element').length, 5);
+```
+
+--
+
 ### Custom Elements are reality
 
 * Native support in Chrome and Firefox (earlier version of the spec)
